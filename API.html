@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+
+<body>
+
+    <p id="myTimer">60</p>
+    <h2 class="time"></h2>
+    <div id="main"></div>
+    <!--
+    <div class="card">
+        <h1 class="card-header">Coding Quiz Challenge</h1>
+        <div class="card-body">
+          <h5 class="timer-title">60</h5>
+          <p class="card-text">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+            answers will penalize your score time by ten seconds!</p>
+          <a href="#" class="btn btn-primary">Start Quiz</a>
+        </div>
+      </div>
+-->
+
+    <div class="container">
+        <div id="home">
+        <h1>Coding Quiz Challenge</h1>
+        <div>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by ten seconds!</p>
+            <div>
+                <button id="StartQuiz">Start Quiz</button>
+                <!--form?-->
+            </div>
+        </div>
+        </div>
+
+        <div class="hide" id="QuizQ">
+        <div id="Question-title">
+            <!--question  text. Use js to populate it-->
+        </div>
+        <div id="AllChoices">
+            <button onclick="ChangeQ(0)" id="choice-1"> </button>
+            <button onclick="ChangeQ(1)" id="choice-2"> </button>
+            <button onclick="ChangeQ(2)" id="choice-3"> </button>
+            <button onclick="ChangeQ(3)" id="choice-4"> </button>
+        </div>
+        </div>
+    </div>
+
+    <!--make invisible questions in the text. The buttons for all four chioces. Swap in and out the content-->
+
+    <!--When  the start button is clicked, hide (add  class "hide" to the submite button, and remove the hide class from the question title and "choices" queryselector and setattribute. set class to empty quotes-->
+
+    <script type="text/javascript" src="Assets/js/questions.js"></script>
+
+</body>
+
+</html>
+<!--separate high scores page-->
